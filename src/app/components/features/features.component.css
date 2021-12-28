@@ -1,12 +1,4 @@
-.selection-koban {
-    background: rgb(6, 133, 237);
-    background: linear-gradient(320deg, rgba(6, 133, 237, 1) 0%, rgba(3, 188, 190, 1) 50%, rgba(0, 244, 152, 1) 100%);
-}
 
-.selection-koban_section {
-    background: rgb(6, 133, 237);
-    background: linear-gradient(229deg, rgba(6, 133, 237, 1) 0%, rgba(3, 188, 190, 1) 50%, rgba(0, 244, 152, 1) 100%);
-}
 .section-card {
     background: #01ea9f;
 }
@@ -34,5 +26,5 @@
 }
 
 .body-card {
-    background-color: #00f498;
+    background-color: #fff;
 }
