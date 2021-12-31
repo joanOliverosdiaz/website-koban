@@ -10,6 +10,7 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { CardPageComponent } from './components/card-page/card-page.component';
 import { QrPageComponent } from './components/qr-page/qr-page.component';
+import { InvestmentsPageComponent } from './components/investments-page/investments-page.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'card-page',      component: CardPageComponent },
-    { path: 'qr-page',      component: QrPageComponent }
+    { path: 'qr-page',      component: QrPageComponent },
+    { path: 'investments-page',      component: InvestmentsPageComponent },
 ];
 
 @NgModule({

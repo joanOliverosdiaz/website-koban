@@ -28,6 +28,7 @@ import { CardPageComponent } from './card-page/card-page.component';
 import { FeaturesComponent } from './features/features.component';
 import { CashinCardComponent } from './cashin-card/cashin-card.component';
 import { QrPageComponent } from './qr-page/qr-page.component';
+import { InvestmentsPageComponent } from './investments-page/investments-page.component';
 
 @NgModule({
     imports: [
@@ -60,7 +61,8 @@ import { QrPageComponent } from './qr-page/qr-page.component';
         CardPageComponent,
         FeaturesComponent,
         CashinCardComponent,
-        QrPageComponent
+        QrPageComponent,
+        InvestmentsPageComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

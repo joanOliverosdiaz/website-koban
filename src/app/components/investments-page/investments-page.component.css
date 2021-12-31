@@ -28,12 +28,13 @@
 }
 .center {
     display: block;
-    width: 100%;
-    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50px;
 }
-
 .body-card {
-    background-color: #00f498;
+    background-color: #fff;
 }
 .steps{
     border: 1px solid;
