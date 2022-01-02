@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./security-page.component.css']
 })
 export class SecurityPageComponent implements OnInit {
-  public isCollapsed = false;
+
   constructor() { }
 
   ngOnInit(): void {

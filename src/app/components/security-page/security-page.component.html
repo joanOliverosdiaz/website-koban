@@ -17,48 +17,71 @@
         </div>
     </div>
 </div>
-<div class="d-flex flex-column justify-content-center w-100 h-100">
-    <div class="container">
-        <div class="row row_elements justify-content-center" style="flex-wrap:nowrap" data-aos="fade-up"
-            data-aos-duration="3000">
-            <div class="col-md-4 elements green-color">
-                <img src="https://www.uala.com.ar/assets/images/transferencias/transferencias%201.png" width="100px"
-                    alt="">
-                <h5>Transferencias entre usuarios</h5>
-                <hr>
-                <p class="blue-color">Podés recibir o mandar plata a tus amig@s o familiares que tienen Koban. Buscá su
-                    nombre de usuario en la sección “Transferencias” o escaneá el código de QR desde su app. Es gratis e
-                    instantáneo.</p>
-            </div>
-            <div class="col-md-4 elements green-color">
-                <img src="https://www.uala.com.ar/assets/images/transferencias/SPEI%201.png" width="100px" alt="">
-                <h5>Transferencias a cuentas bancarias y/o virtuales</h5>
-                <hr>
-                <p class="blue-color">Podés recibir transferencias desde cualquier cuenta bancaria y/o virtual a tu CVU
-                    de Ualá. También podés mandar plata a otras cuentas desde la sección “Transferencias” de la app.</p>
-            </div>
-            <div class="col-md-4 elements green-color">
-                <img src="https://www.uala.com.ar/assets/images/transferencias/SPEI%202.png" width="100px" alt="">
-                <h5>Clave de seguridad</h5>
-                <hr>
-                <p class="blue-color">Para hacer transferencias desde la app de Ualá necesitás la clave de 6 dígitos o
-                    clave de seguridad que creaste cuando validamos tu usuario. Si te la olvidaste podés recuperarla
-                    haciendo click en “Olvidé mi clave” antes de confirmar la transferencia o movimiento de plata.</p>
+
+<ul class="m-d expand-list">
+    <li data-md-content="200" class="elements li-element">
+        <img src="	https://www.uala.com.ar/assets/images/seguridad/1.png" style="margin-left: 20px;" width="80rem" alt="">
+        <label name="tab" for="tab1" tabindex="-1" class="tab_lab green-color" role="tab">Seguridad de tu claves</label>
+        <input type="checkbox" checked class="tab" id="tab1" tabindex="0" />
+        <span class="open-close-icon">
+            <svg aria-hidden="true" class="transform -rotate-90" data-reactid="266" fill="none" height="24"
+                stroke="#3E6BFD" stroke-width="3" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </span>
+        <div class="content">
+            <div >
+                <div>
+                    <p class="blue-color">Las claves que usás para operar en Ualá son datos confidenciales. Nunca las compartas con nadie, incluso si parece que te las pide Ualá. Tampoco muestres los números que están atrás de la tarjeta.</p>
+                    <p class="blue-color">Cuando crees o modifiques tus claves, evitá usar información personal que pueda ser fácil de adivinar (fecha de nacimiento, número de documento u otra información similar).</p>
+                    <p class="blue-color">Si olvidaste tu clave de inicio de sesión y seguiste los pasos para recuperarla, no compartas con nadie los códigos que te enviamos para resetearla.</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
-<p>
-    <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-      aria-controls="collapseExample">
-      Toggle
-    </button>
-  </p>
-  <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-    <div class="card">
-      <div class="card-body">
-        You can collapse this card by clicking Toggle
-      </div>
-    </div>
-  </div>
+    </li>
+    <li data-md-content="200" class="elements li-element">
+        <img src="https://www.uala.com.ar/assets/images/seguridad/2.png" style="margin-left: 20px;" width="80rem" alt="">
+        <label name="tab" for="tab2" tabindex="-1" class="tab_lab green-color" role="tab">Seguridad de tu dispositivo</label>
+        <input type="checkbox" checked class="tab" id="tab2" tabindex="0" />
+        <span class="open-close-icon">
+            <svg aria-hidden="true" class="transform -rotate-90" data-reactid="266" fill="none" height="24"
+                stroke="#3E6BFD" stroke-width="3" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </span>
+        <div class="content">
+            <div >
+                <div>
+                    <p class="blue-color">Bloqueá el acceso a tu celular con un código de bloqueo, patrón o con algún mecanismo de
+                        biometría (cara, huella dactilar, etc).</p>
+                    <p class="blue-color">Actualizá regularmente tus aplicaciones y sistema operativo de tu celular para tener las últimas
+                        actualizaciones de seguridad.</p>
+                    <p class="blue-color">Nunca instales aplicaciones por fuera de Play Store o App Store, no se pueden garantizar que sean
+                        legítimas.</p>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li data-md-content="200" class="elements li-element">
+        <img src="https://www.uala.com.ar/assets/images/seguridad/4.png" style="margin-left: 20px;" width="80rem" alt="">
+        <label name="tab" for="tab3" tabindex="-1" class="tab_lab green-color" role="tab">Seguridad en tus operaciones</label>
+        <input type="checkbox" checked class="tab" id="tab3" tabindex="0" />
+        <span class="open-close-icon">
+            <svg aria-hidden="true" class="transform -rotate-90" data-reactid="266" fill="none" height="24"
+                stroke="#3E6BFD" stroke-width="3" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </span>
+        <div class="content">
+            <div >
+                <div>
+                    <p class="blue-color">Desconfiá de toda comunicación que contenga links sospechosos y/o que te pida las claves de tu Ualá o cualquier otra información confidencial para darte un beneficio a cambio.</p>
+                    <p class="blue-color">Nuestra casilla oficial de mail es hola@Koban.com.ar y nuestras redes sociales @Koban_arg (chequeá el tilde azul para comprobar que sea la cuenta oficial). Nunca te vamos a contactar por otro medio.</p>
+                    <p class="blue-color">Cuando compres online, verificá que la dirección de la página web sea legítima y que se trate de un sitio seguro.</p>
+                    <p class="blue-color">Si comprás un producto o servicio a otra persona, asegurate de que todo sea legítimo y confiable. Leé las experiencias de otros compradores. Recordá que Ualá es un medio de pago y no es responsable por las transacciones entre partes.</p>
+                    <p class="blue-color">Si tenés alguna duda o sospecha antes o después de haber realizado alguna operación escribinos por el chat de la app o por mail a hola@Koban.com.ar para que podamos ayudarte.</p>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
