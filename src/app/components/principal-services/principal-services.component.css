@@ -24,8 +24,8 @@ p {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px -2px #0cbabe;
-    margin: 40px;
+    margin: 20px;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0px 5px 24px 6px rgba(62,107,253,0.1);
 }
 
 .menu::before {
@@ -65,4 +65,6 @@ p {
     transform: scaleX(1);
     transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
 }
+
+
 

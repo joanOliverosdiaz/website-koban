@@ -11,6 +11,10 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { CardPageComponent } from './components/card-page/card-page.component';
 import { QrPageComponent } from './components/qr-page/qr-page.component';
 import { InvestmentsPageComponent } from './components/investments-page/investments-page.component';
+import { BillpaymentComponent } from './components/billpayment/billpayment.component';
+import { TransfersPageComponent } from './components/transfers-page/transfers-page.component';
+import { WithdrawalsComponent } from './components/withdrawals/withdrawals.component';
+import { SecurityPageComponent } from './components/security-page/security-page.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -22,6 +26,10 @@ const routes: Routes =[
     { path: 'card-page',      component: CardPageComponent },
     { path: 'qr-page',      component: QrPageComponent },
     { path: 'investments-page',      component: InvestmentsPageComponent },
+    { path: 'billpayment-page',      component: BillpaymentComponent },
+    { path: 'transfer-page',      component: TransfersPageComponent },
+    { path: 'withdrawals-page',      component: WithdrawalsComponent },
+    { path: 'security-page',      component: SecurityPageComponent },
 ];
 
 @NgModule({
