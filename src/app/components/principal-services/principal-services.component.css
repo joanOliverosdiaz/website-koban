@@ -20,6 +20,9 @@ p {
 .inner-img:hover {
     transform: scale(1.1);
 }
+.mb{
+    margin-bottom: 10px;
+}
 .menu {
     display: flex;
     justify-content: center;
