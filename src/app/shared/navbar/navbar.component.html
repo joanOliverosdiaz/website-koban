@@ -22,8 +22,8 @@
                             <i _ngcontent-hoj-c1="" class="nc-icon nc-credit-card"></i>Tarjeta</a>
                         <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem="" [routerLink]="['/qr-page']">
                             <i _ngcontent-hoj-c1="" class="fa fa-qrcode"></i>Qr</a>
-                        <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem="" [routerLink]="['/user-profile']">
-                            <i _ngcontent-hoj-c1="" class="nc-icon nc-bullet-list-67"></i>Pago de factura</a>
+                        <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem="" [routerLink]="['/investments-page']">
+                            <i _ngcontent-hoj-c1="" class="nc-icon nc-bullet-list-67"></i>Inversiones</a>
                     </div>
                 </div>
                 <li class="nav-item" *ngIf="!isDocumentation()">
@@ -56,19 +56,10 @@
                         <p class="d-lg-none">Instagram</p>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isHome()">
+                <li class="nav-item">
                     <a href="https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local"
                         target="_blank" class="btn btn-info">Lista de Espera</a>
-                </li>
-                <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i
-                            class="nc-icon nc-layout-11"></i>Components</a>
-                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
-                </li>
-                <li class="nav-item" *ngIf="isDocumentation()">
-                    <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local"
-                        target="_blank" class="nav-link">Have an issue</a>
-                </li>
+                </li>                
             </ul>
         </div>
     </div>

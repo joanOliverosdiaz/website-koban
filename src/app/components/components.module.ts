@@ -28,6 +28,11 @@ import { CardPageComponent } from './card-page/card-page.component';
 import { FeaturesComponent } from './features/features.component';
 import { CashinCardComponent } from './cashin-card/cashin-card.component';
 import { QrPageComponent } from './qr-page/qr-page.component';
+import { InvestmentsPageComponent } from './investments-page/investments-page.component';
+import { BillpaymentComponent } from './billpayment/billpayment.component';
+import { TransfersPageComponent } from './transfers-page/transfers-page.component';
+import { WithdrawalsComponent } from './withdrawals/withdrawals.component';
+import { SecurityPageComponent } from './security-page/security-page.component';
 
 @NgModule({
     imports: [
@@ -60,7 +65,12 @@ import { QrPageComponent } from './qr-page/qr-page.component';
         CardPageComponent,
         FeaturesComponent,
         CashinCardComponent,
-        QrPageComponent
+        QrPageComponent,
+        InvestmentsPageComponent,
+        BillpaymentComponent,
+        TransfersPageComponent,
+        WithdrawalsComponent,
+        SecurityPageComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

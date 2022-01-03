@@ -36,3 +36,8 @@
 .body-card {
     background-color: #ffffff;
 }
+.content{
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
