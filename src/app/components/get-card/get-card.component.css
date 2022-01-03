@@ -1,6 +1,6 @@
 .selection-koban {
-    background: rgb(6,133,237);
-    background: linear-gradient(274deg, rgba(6,133,237,1) 0%, rgba(3,188,190,1) 50%, rgba(0,244,152,1) 100%);
+    background: rgb(6, 133, 237);
+    background: linear-gradient(274deg, rgba(6, 133, 237, 1) 0%, rgba(3, 188, 190, 1) 50%, rgba(0, 244, 152, 1) 100%);
 }
 .downloadStepImage {
     display: flex;
@@ -12,15 +12,54 @@
     text-align: center;
 }
 
-.title{
+.title {
     text-align: center;
 }
-.category{
+.category {
     text-align: center;
 }
-.row{
+.row {
     justify-content: center;
 }
-.stepNumer{
+.stepNumer {
     color: #ffffff;
+}
+
+
+img{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.row_elements{
+    margin-top: 20px;
+}
+.elements{
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0px 5px 24px 6px rgba(62,107,253,0.1);
+}
+
+.blue-color{
+    color: #0685ed;
+}
+
+.pasos-envio-2_svg__st2 {
+    fill: #fff;
+    stroke: #3e6bfd;
+    stroke-width: .5019;
+    stroke-linecap: round;
+    stroke-miterlimit: 10
+}
+
+.pasos-envio-2_svg__st3 {
+    fill: #8ea8ff
+}
+
+.pasos-envio-2_svg__st4 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: .5019;
+    stroke-linecap: round;
+    stroke-miterlimit: 10
 }

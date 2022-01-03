@@ -15,6 +15,8 @@ import { BillpaymentComponent } from './components/billpayment/billpayment.compo
 import { TransfersPageComponent } from './components/transfers-page/transfers-page.component';
 import { WithdrawalsComponent } from './components/withdrawals/withdrawals.component';
 import { SecurityPageComponent } from './components/security-page/security-page.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { WaitingListComponent } from './components/waiting-list/waiting-list.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -30,6 +32,8 @@ const routes: Routes =[
     { path: 'transfer-page',      component: TransfersPageComponent },
     { path: 'withdrawals-page',      component: WithdrawalsComponent },
     { path: 'security-page',      component: SecurityPageComponent },
+    { path: 'about-us-page',      component: AboutUsComponent },
+    { path: 'waiting-list-page',      component: WaitingListComponent },
 ];
 
 @NgModule({

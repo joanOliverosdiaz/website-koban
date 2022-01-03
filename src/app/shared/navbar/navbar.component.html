@@ -13,21 +13,55 @@
         <div _ngcontent-hoj-c1="" class="collapse navbar-collapse">
             <ul _ngcontent-hoj-c1="" class="navbar-nav ml-auto">
                 <div _ngcontent-hoj-c1="" class="nav-item dropdown" ngbdropdown="true">
-                    <div _ngcontent-hoj-c1="" aria-haspopup="true" (click)="showCollapse($event)"
-                        class="nav-link dropdown-toggle dropdown-toggle" ngbdropdowntoggle="" aria-expanded="false">
+                    <div _ngcontent-hoj-c1="" aria-haspopup="true" (click)="showCollapse()"
+                        class="nav-link dropdown-toggle dropdown-toggle" style="cursor:pointer" ngbdropdowntoggle="" aria-expanded="false">
                         Servicios</div>
                     <div _ngcontent-hoj-c1="" class="dropdown-menu dropdown-menu-right dropdown-primary"
                         ngbdropdownmenu="">
-                        <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem="" [routerLink]="['/card-page']">
-                            <i _ngcontent-hoj-c1="" class="nc-icon nc-credit-card"></i>Tarjeta</a>
-                        <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem="" [routerLink]="['/qr-page']">
-                            <i _ngcontent-hoj-c1="" class="fa fa-qrcode"></i>Qr</a>
-                        <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem="" [routerLink]="['/investments-page']">
-                            <i _ngcontent-hoj-c1="" class="nc-icon nc-bullet-list-67"></i>Inversiones</a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                    [routerLink]="['/card-page']">
+                                    <img src="assets/img/koban_icons/credit-card.png" width="25px" alt="">Tarjeta</a>
+                            </div>
+
+                            <div class="col-md-6">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                    [routerLink]="['/qr-page']">
+                                    <img src="assets/img/koban_icons/qr-code.png" width="20px"
+                                        style="margin-right: 5px;" alt="">Qr</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                    [routerLink]="['/investments-page']">
+                                    <img src="assets/img/koban_icons/investment.png" width="25px"
+                                        style="margin-right: 5px;" alt="">Inversiones</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                [routerLink]="['/billpayment-page']">
+                                <img src="assets/img/koban_icons/billpayment.png" width="25px"
+                                    style="margin-right: 5px;" alt="">Pago de facturas</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                    [routerLink]="['/transfer-page']">
+                                    <img src="assets/img/koban_icons/transfer.png" width="25px"
+                                        style="margin-right: 5px;" alt="">Transferencias</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                [routerLink]="['/withdrawals-page']">
+                                <img src="assets/img/koban_icons/cashout.png" width="25px"
+                                    style="margin-right: 5px;" alt="">Retiros</a>
+                            </div>
+                        </div>
+                       
+
                     </div>
                 </div>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="#" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Sobre
+                    <a [routerLink]="['about-us-page']" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Sobre
                         Nosotros</a>
                 </li>
             </ul>
@@ -57,9 +91,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local"
-                        target="_blank" class="btn btn-info">Lista de Espera</a>
-                </li>                
+                    <a [routerLink]="['/waiting-list-page']" class="btn btn-info">Lista de Espera</a>
+                </li>
             </ul>
         </div>
     </div>
