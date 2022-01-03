@@ -33,6 +33,7 @@ import { BillpaymentComponent } from './billpayment/billpayment.component';
 import { TransfersPageComponent } from './transfers-page/transfers-page.component';
 import { WithdrawalsComponent } from './withdrawals/withdrawals.component';
 import { SecurityPageComponent } from './security-page/security-page.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
     imports: [
@@ -70,7 +71,8 @@ import { SecurityPageComponent } from './security-page/security-page.component';
         BillpaymentComponent,
         TransfersPageComponent,
         WithdrawalsComponent,
-        SecurityPageComponent
+        SecurityPageComponent,
+        AboutUsComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
