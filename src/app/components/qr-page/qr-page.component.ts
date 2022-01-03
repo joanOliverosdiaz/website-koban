@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-qr-page',
@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./qr-page.component.css']
 })
 export class QrPageComponent implements OnInit {
-
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

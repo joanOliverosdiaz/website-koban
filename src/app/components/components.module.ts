@@ -34,6 +34,7 @@ import { TransfersPageComponent } from './transfers-page/transfers-page.componen
 import { WithdrawalsComponent } from './withdrawals/withdrawals.component';
 import { SecurityPageComponent } from './security-page/security-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { WaitingListComponent } from './waiting-list/waiting-list.component';
 
 @NgModule({
     imports: [
@@ -72,7 +73,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
         TransfersPageComponent,
         WithdrawalsComponent,
         SecurityPageComponent,
-        AboutUsComponent
+        AboutUsComponent,
+        WaitingListComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
