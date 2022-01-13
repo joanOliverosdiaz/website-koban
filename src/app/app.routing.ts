@@ -17,6 +17,7 @@ import { WithdrawalsComponent } from './components/withdrawals/withdrawals.compo
 import { SecurityPageComponent } from './components/security-page/security-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { WaitingListComponent } from './components/waiting-list/waiting-list.component';
+import { BudgetingComponent } from './components/budgeting/budgeting.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -32,6 +33,7 @@ const routes: Routes =[
     { path: 'transfer-page',      component: TransfersPageComponent },
     { path: 'withdrawals-page',      component: WithdrawalsComponent },
     { path: 'security-page',      component: SecurityPageComponent },
+    { path: 'budgeting-page',      component: BudgetingComponent },
     { path: 'about-us-page',      component: AboutUsComponent },
     { path: 'waiting-list-page',      component: WaitingListComponent },
 ];

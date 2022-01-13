@@ -1,19 +1,133 @@
-<footer class="footer">
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
     <div class="container">
+
+        <!-- Grid row -->
         <div class="row">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#">KOBAN</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Licenses</a></li>
-                </ul>
-            </nav>
-            <div class="credits ml-auto">
-                <span class="copyright">
-                    © {{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by 
-                    <img src="assets/img/koban_img/Koban_png.png" width="100px" class="creative-tim-logo">
-                </span>
+
+            <!-- Grid column -->
+            <div class="col-md-4">
+                <!-- Content -->
+                <img src="assets/img/koban_img/Koban_png.png" width="100px" class="creative-tim-logo">
+                <p class="color_blue">El Lado Bueno de tu Plata</p>
+                <div class="row mt-20">
+                    <div class="col-md-6">
+                        <img src="assets/img/koban_img/google_play.png" width="100px" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/koban_img/app_store.png" width="100px" alt="">
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-2">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom"
+                            href="https://twitter.com/" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            <p class="d-lg-none">Twitter</p>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
+                            href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="d-lg-none">Facebook</p>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
+                            href="https://www.instagram.com/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                            <p class="d-lg-none">Instagram</p>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Servicios</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="footer-link" [routerLink]="['/card-page']">
+                            Tarjeta</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" [routerLink]="['/qr-page']">
+                            Qr</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" [routerLink]="['/billpayment-page']">
+                            Pagos</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" [routerLink]="['/transfer-page']">
+                            Transferencias</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" [routerLink]="['/withdrawals-page']">
+                            Retiros</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sobre Koban</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a [routerLink]="['about-us-page']" class="footer-link"> Sobre
+                            Nosotros</a>
+                    </li>                    
+                </ul>
+
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Seguridad</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a [routerLink]="['/security-page']" class="footer-link"> Seguridad</a>
+                    </li>                    
+                </ul>
+
+            </div>
+
         </div>
+        <!-- Grid row -->
+
     </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">       
+        <li class="list-inline-item">
+            <a [routerLink]="['/waiting-list-page']" class="btn btn-info">Lista de Espera</a>
+        </li>
+    </ul>
+    <!-- Call to action -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        <span class="copyright">
+            © {{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by
+            <img src="assets/img/koban_img/Koban_png.png" width="100px" class="creative-tim-logo">
+        </span>
+    </div>
+    <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
