@@ -113,3 +113,10 @@ button:focus::after {
     background-color: #0685ed !important;
     border-color: #0685ed;
 }
+
+
+#banner{
+    width: auto;
+    height:  auto;
+    position: absolute;
+}

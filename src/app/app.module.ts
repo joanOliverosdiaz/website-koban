@@ -12,12 +12,13 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent    
   ],
   imports: [
     BrowserModule,
@@ -28,6 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ExamplesModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgbPaginationModule, 
+    NgbAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]

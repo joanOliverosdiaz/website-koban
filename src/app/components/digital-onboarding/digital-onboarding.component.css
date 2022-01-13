@@ -6,7 +6,7 @@
 }
 
 .selection-koban {
-    background: #0685ed; /* fallback for old browsers */    
+    background: #fff; /* fallback for old browsers */    
 }
 
 .category {
@@ -24,4 +24,8 @@ img {
     width: 70%;
     max-width: 70%;
     height: auto;
+}
+
+.blue-color {
+    color: #0685ed !important;
 }

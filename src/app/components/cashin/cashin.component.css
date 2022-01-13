@@ -1,34 +1,40 @@
-.selection-koban {
-    background: #03bcbe; /* fallback for old browsers */
-       
-}
 
-.cashin {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
+.main-card {
+    margin-top: 10%;
 }
-
-.title{
-    color: #ffffff !important;
+.margin{
+    margin: 20px 0px 20px 0px;
 }
-.category {
-    color: #ffffff !important;
+.row_elements{
+    margin-top: 20px;
 }
-.description{
-    color: #ffffff;
-}
-
-.row{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.elements{
+    margin: 10px;
     border-radius: 20px;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0px 5px 24px 6px rgba(62,107,253,0.1);
+}
+.blue-color{
+    color: #0685ed;
+}
+.green-color{
+    color: #03bcbe;
 }
 
+.selector {
+	background: linear-gradient(-45deg, #0685ed, #03bcbe, #00f498, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

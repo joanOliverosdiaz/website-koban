@@ -1,12 +1,8 @@
 .selection-koban {
-  background: #00f498;
+  background: #fff;
 }
 
 .title,
 .description {
   color: #0685ed;
-}
-
-img {
-  width: 300px;
 }

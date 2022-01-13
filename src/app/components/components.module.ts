@@ -35,6 +35,7 @@ import { WithdrawalsComponent } from './withdrawals/withdrawals.component';
 import { SecurityPageComponent } from './security-page/security-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { WaitingListComponent } from './waiting-list/waiting-list.component';
+import { FinanceComponent } from './finance/finance.component';
 
 @NgModule({
     imports: [
@@ -74,7 +75,8 @@ import { WaitingListComponent } from './waiting-list/waiting-list.component';
         WithdrawalsComponent,
         SecurityPageComponent,
         AboutUsComponent,
-        WaitingListComponent
+        WaitingListComponent,
+        FinanceComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

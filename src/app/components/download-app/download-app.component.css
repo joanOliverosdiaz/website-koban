@@ -1,7 +1,8 @@
-.section-responsive .phone-container img {
-    width: 100%;
-    margin-top: -140px;
-    margin-left: -100px;
+.section-responsive .phone-container {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
 }
 
 .selection-koban {
@@ -25,4 +26,26 @@ p {
     font-size: 22px;
     font-weight: bold;
     font-family: sans-serif;
+}
+
+
+.img-phone{
+    width: 50%;
+}
+.img {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid green;
+}
+
+@media screen and (max-width: 420px) {
+    .img {
+        width: 70%;
+    }
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }

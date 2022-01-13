@@ -19,6 +19,14 @@
 .main-card {
     margin-top: 10%;
 }
+.row_element{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px;
+}
 .category,
 .description {
     color: #ffffff;
@@ -28,7 +36,7 @@
 }
 .center {
     display: block;
-    width: 100%;
+    width: 70%;
     border-radius: 30px;
 }
 
