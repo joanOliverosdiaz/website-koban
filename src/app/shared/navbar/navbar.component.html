@@ -13,37 +13,42 @@
         <div _ngcontent-hoj-c1="" class="collapse navbar-collapse">
             <ul _ngcontent-hoj-c1="" class="navbar-nav ml-auto">
                 <div _ngcontent-hoj-c1="" class="nav-item dropdown" ngbdropdown="true">
-                    <div _ngcontent-hoj-c1="" aria-haspopup="true"
-                        class="nav-link dropdown-toggle dropdown-toggle" style="cursor:pointer" ngbdropdowntoggle="" aria-expanded="false">
+                    <div _ngcontent-hoj-c1="" aria-haspopup="true" class="nav-link dropdown-toggle dropdown-menu-right dropbtn"
+                        style="cursor:pointer" ngbdropdowntoggle="" aria-expanded="false" >
                         Servicios</div>
-                    <div _ngcontent-hoj-c1="" class="dropdown-menu dropdown-menu-right dropdown-primary"
+                    <div _ngcontent-hoj-c1="" class="dropdown-content"
                         ngbdropdownmenu="">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
                                     [routerLink]="['/card-page']">
                                     Tarjeta</a>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
                                     [routerLink]="['/qr-page']">
-                                    Qr</a>
-                            </div>                            
-                            <div class="col-md-6">
-                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
-                                [routerLink]="['/billpayment-page']">
-                                Pagos</a>
+                                    QR</a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                    [routerLink]="['/billpayment-page']">
+                                    Pagos</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                    [routerLink]="['/budgeting-page']">
+                                    Análisis de costos</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
+                                    [routerLink]="['/withdrawals-page']">
+                                    Retiros</a>
+                            </div>
+                            <div class="col-md-4">
                                 <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
                                     [routerLink]="['/transfer-page']">
                                     Transferencias</a>
-                            </div>
-                            <div class="col-md-6">
-                                <a _ngcontent-hoj-c1="" class="dropdown-item" ngbdropdownitem=""
-                                [routerLink]="['/withdrawals-page']">
-                                Retiros</a>
                             </div>
                         </div>
                     </div>

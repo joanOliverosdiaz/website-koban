@@ -26,7 +26,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { SecurityComponent } from './security/security.component';
 import { CardPageComponent } from './card-page/card-page.component';
 import { FeaturesComponent } from './features/features.component';
-import { CashinCardComponent } from './cashin-card/cashin-card.component';
 import { QrPageComponent } from './qr-page/qr-page.component';
 import { InvestmentsPageComponent } from './investments-page/investments-page.component';
 import { BillpaymentComponent } from './billpayment/billpayment.component';
@@ -37,6 +36,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { WaitingListComponent } from './waiting-list/waiting-list.component';
 import { FinanceComponent } from './finance/finance.component';
 import { BudgetingComponent } from './budgeting/budgeting.component';
+import { LoansPageComponent } from './loans-page/loans-page.component';
+import { LoansSimulationComponent } from './loans-simulation/loans-simulation.component';
 
 @NgModule({
     imports: [
@@ -68,7 +69,6 @@ import { BudgetingComponent } from './budgeting/budgeting.component';
         SecurityComponent,
         CardPageComponent,
         FeaturesComponent,
-        CashinCardComponent,
         QrPageComponent,
         InvestmentsPageComponent,
         BillpaymentComponent,
@@ -78,7 +78,9 @@ import { BudgetingComponent } from './budgeting/budgeting.component';
         AboutUsComponent,
         WaitingListComponent,
         FinanceComponent,
-        BudgetingComponent
+        BudgetingComponent,
+        LoansPageComponent,
+        LoansSimulationComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

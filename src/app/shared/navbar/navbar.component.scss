@@ -1,11 +1,75 @@
 .navbar .navbar-nav .dropdown-menu {
-    border-radius: 12px;
-    margin-top: -25px;
-    margin-right: -120px;
-    width: 320%  !important;
+  border-radius: 12px;
+  margin-top: -25px;
+  margin-right: -120px;
+  width: 320% !important;
 }
 
 .btn-info {
-    background-color: #0685ed !important;
-    border-color: #0685ed;
+  background-color: #0685ed !important;
+  border-color: #0685ed;
+}
+
+.dropbtn {
+  color: #fff;
+  padding: 21px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0px;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+
+.dropdown-content a {
+  color: #0685ed;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-color: #0685ed;
+  display: block;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: shake 500ms ease-in-out forwards;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
 }

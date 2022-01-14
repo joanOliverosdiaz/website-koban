@@ -18,6 +18,7 @@ import { SecurityPageComponent } from './components/security-page/security-page.
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { WaitingListComponent } from './components/waiting-list/waiting-list.component';
 import { BudgetingComponent } from './components/budgeting/budgeting.component';
+import { LoansPageComponent } from './components/loans-page/loans-page.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const routes: Routes =[
     { path: 'security-page',      component: SecurityPageComponent },
     { path: 'budgeting-page',      component: BudgetingComponent },
     { path: 'about-us-page',      component: AboutUsComponent },
+    { path: 'loans-page',      component: LoansPageComponent },
     { path: 'waiting-list-page',      component: WaitingListComponent },
 ];
 

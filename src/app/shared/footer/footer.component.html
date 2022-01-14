@@ -11,7 +11,6 @@
             <div class="col-md-4">
                 <!-- Content -->
                 <img src="assets/img/koban_img/Koban_png.png" width="100px" class="creative-tim-logo">
-                <p class="color_blue">El Lado Bueno de tu Plata</p>
                 <div class="row mt-20">
                     <div class="col-md-6">
                         <img src="assets/img/koban_img/google_play.png" width="100px" alt="">
@@ -55,24 +54,24 @@
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Servicios</h5>
 
                 <ul class="list-unstyled">
-                    <li>
-                        <a class="footer-link" [routerLink]="['/card-page']">
+                    <li class="footer-link">
+                        <a [routerLink]="['/card-page']">
                             Tarjeta</a>
                     </li>
-                    <li>
-                        <a class="footer-link" [routerLink]="['/qr-page']">
-                            Qr</a>
+                    <li class="footer-link"> 
+                        <a [routerLink]="['/qr-page']">
+                            QR</a>
                     </li>
-                    <li>
-                        <a class="footer-link" [routerLink]="['/billpayment-page']">
+                    <li class="footer-link">
+                        <a [routerLink]="['/billpayment-page']">
                             Pagos</a>
                     </li>
-                    <li>
-                        <a class="footer-link" [routerLink]="['/transfer-page']">
+                    <li class="footer-link">
+                        <a [routerLink]="['/transfer-page']">
                             Transferencias</a>
                     </li>
-                    <li>
-                        <a class="footer-link" [routerLink]="['/withdrawals-page']">
+                    <li class="footer-link">
+                        <a [routerLink]="['/withdrawals-page']">
                             Retiros</a>
                     </li>
                 </ul>
@@ -89,7 +88,7 @@
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sobre Koban</h5>
 
                 <ul class="list-unstyled">
-                    <li>
+                    <li class="footer-link">
                         <a [routerLink]="['about-us-page']" class="footer-link"> Sobre
                             Nosotros</a>
                     </li>                    
@@ -98,7 +97,7 @@
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Seguridad</h5>
 
                 <ul class="list-unstyled">
-                    <li>
+                    <li class="footer-link">
                         <a [routerLink]="['/security-page']" class="footer-link"> Seguridad</a>
                     </li>                    
                 </ul>
@@ -110,15 +109,6 @@
 
     </div>
     <!-- Footer Links -->
-
-    <hr>
-
-    <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">       
-        <li class="list-inline-item">
-            <a [routerLink]="['/waiting-list-page']" class="btn btn-info">Lista de Espera</a>
-        </li>
-    </ul>
     <!-- Call to action -->
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">

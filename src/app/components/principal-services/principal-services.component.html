@@ -1,136 +1,89 @@
-<div _ngcontent-bbw-c2="" class="section section-koban">
-    <h1 class="info-title" style="margin-left: 30px;">
-        Mirá todo lo que <br>
-        podés hacer con Koban</h1>
-    <div _ngcontent-bbw-c2="" class="container">
-        <div _ngcontent-bbw-c2="" class="row justify-content-center">
-            <div _ngcontent-bbw-c2="" class="col-md-5 menu inner-img" data-animation="center" data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                <a [routerLink]="['/card-page']">
-                    <div _ngcontent-bbw-c2="" class="info">
-                        <div _ngcontent-bbw-c2="" class="description">
-                            <h4 _ngcontent-bbw-c2="" class="info-title"> Tarjeta</h4>
-                            <p _ngcontent-bbw-c2="">Comprá en cualquier comercio o página web del mundo que acepte Mastercard.</p>
-                        </div>
-                        <div _ngcontent-bbw-c2="" class="inner-img fl_right mb">
-                            <img src="assets/img/koban_icons/credit-card.png" width="80px"
-                                alt="">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div _ngcontent-bbw-c2="" class="col-md-5 menu inner-img" data-animation="center" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <a [routerLink]="['/qr-page']">
-                    <div _ngcontent-bbw-c2="" class="info">
-                        <div _ngcontent-bbw-c2="" class="description">
-                            <h4 _ngcontent-bbw-c2="" class="info-title"> QR </h4>
-                            <p _ngcontent-bbw-c2="">En cualquier comercio que tenga QR, escaneá con Koban y pagá con la plata que tengas en la cuenta.</p>
-                        </div>
-                        <div _ngcontent-bbw-c2="" class="inner-img fl_right mb">
-                            <img src="assets/img/koban_icons/qr-code.png" width="75px"
-                                alt="">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div _ngcontent-bbw-c2="" class="col-md-5 menu inner-img" data-animation="center" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <a [routerLink]="['/billpayment-page']">
-                    <div _ngcontent-bbw-c2="" class="info">
-                        <div _ngcontent-bbw-c2="" class="description">
-                            <h4 _ngcontent-bbw-c2="" class="info-title"> Pagos
-                            </h4>
-                            <p _ngcontent-bbw-c2="">Recargá tus servicios prepagos, pagá tus facturas sin moverte de tu casa.</p>
-                        </div>
-                        <div _ngcontent-bbw-c2="" class="inner-img fl_right mb">
-                            <img src="assets/img/koban_icons/billpayment.png" width="80px"
-                                alt="">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div _ngcontent-bbw-c2="" class="col-md-5 menu inner-img" data-animation="center" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <a [routerLink]="['/transfer-page']">
-                    <div _ngcontent-bbw-c2="" class="info">
-                        <div _ngcontent-bbw-c2="" class="description">
-                            <h4 _ngcontent-bbw-c2="" class="info-title"> Transferencias </h4>
-                            <p _ngcontent-bbw-c2="">Enviá y recibí plata desde cualquier cuenta bancaria y/o virtual, gratis y en el acto.</p>
-                        </div>
-                        <div _ngcontent-bbw-c2="" class="inner-img fl_right mb">
-                            <img src="assets/img/koban_icons/transfer.png" width="80px"
-                                alt="">
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div> 
-        <div class="row justify-content-center">            
-            <!-- <div _ngcontent-bbw-c2="" class="col-md-3 menu inner-img" data-animation="center" data-aos="fade-up"
-                data-aos-duration="4000">
-                <div _ngcontent-bbw-c2="" class="info">
-                    <div _ngcontent-bbw-c2="" class="icon ">
-                        <img src="https://www.uala.com.ar/assets/images/cardImages/creditos.png" width="170px" alt="">
-                    </div>
-                    <div _ngcontent-bbw-c2="" class="description">
-                        <h4 _ngcontent-bbw-c2="" class="info-title"> Préstamos </h4>
-                        <p _ngcontent-bbw-c2="">Speed up your development time or get inspired with the large number of
-                            example pages. You can jump start your development with our pre-built example pages.</p>
-                    </div>
+<div class="d-flex flex-column justify-content-center w-100 h-100 kb-selector-white">
+    <div class="container kb-mt-5">
+        <div class="row">
+            <h1 class="title kb-bl-color">Mirá todo lo que <br> podés hacer con Koban</h1>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/card-page']">
+                        <h4 class="title kb-bl-color">Tarjeta</h4>
+                        <p class="kb-bl-color">Comprá en cualquier comercio o página web del mundo que acepte
+                            Mastercard.</p>
+                        <img class="kb-icon" src="assets/img/koban_icons/credit-card.png" alt="">
+                    </a>
                 </div>
-            </div> -->
-            <div _ngcontent-bbw-c2="" class="col-md-3 menu inner-img" data-animation="center" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <a [routerLink]="['/withdrawals-page']">
-                    <div _ngcontent-bbw-c2="" class="info">
-                        <div _ngcontent-bbw-c2="" class="icon ">
-                            <img src="assets/img/koban_icons/cashout.png" width="80px"
-                                alt="">
-                        </div>
-                        <div _ngcontent-bbw-c2="" class="description">
-                            <h4 _ngcontent-bbw-c2="" class="info-title animation-element"> Retiros </h4>
-                            <p _ngcontent-bbw-c2="">Podés extraer efectivo en cualquier sucursal de BMSC o en cajeros de la red Enlace o Linkser.</p>
-                        </div>
-                    </div>
-                </a>
+                <div class="col-md-5 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/qr-page']">
+                        <h4 class="title kb-bl-color">QR</h4>
+                        <p class="kb-bl-color">En cualquier comercio que tenga QR, escaneá con Koban y pagá con la
+                            plata que tengas en la cuenta.</p>
+                        <img class="kb-icon" src="assets/img/koban_icons/qr-code.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/billpayment-page']">
+                        <h4 class="title kb-bl-color">Pagos</h4>
+                        <p class="kb-bl-color">Recargá tus servicios prepagos, pagá tus facturas sin moverte de tu
+                            casa.</p>
+                        <img class="kb-icon" src="assets/img/koban_icons/billpayment.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/transfer-page']">
+                        <h4 class="title kb-bl-color">Transferencias</h4>
+                        <p class="kb-bl-color">Enviá y recibí plata desde cualquier cuenta bancaria y/o virtual,
+                            gratis y en el acto.</p>
+                        <img class="kb-icon" src="assets/img/koban_icons/transfer.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/transfer-page']">
+                        <h4 class="title kb-bl-color">Seguridad</h4>
+                        <p class="kb-bl-color">Seguí estos consejos para operar de forma segura con Koban.</p>
+                        <img class="kb-icon" src="assets/img/koban_icons/internet-security.png" alt="">
+                    </a>
+                </div>
             </div>
-            <div _ngcontent-bbw-c2="" class="col-md-3 menu inner-img" data-animation="center" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <a [routerLink]="['/security-page']">
-                    <div _ngcontent-bbw-c2="" class="info">
-                        <div _ngcontent-bbw-c2="" class="icon ">
-                            <img src="assets/img/koban_icons/internet-security.png" width="80px"
-                                alt="">
+            <div class="row justify-content-center">
+                <div class="col-md-3 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/loans-page']">
+                        <div class="row">
+                            <img class="kb-icon kb-icon-left" src="assets/img/koban_icons/loan.png" alt="">
                         </div>
-                        <div _ngcontent-bbw-c2="" class="description">
-                            <h4 _ngcontent-bbw-c2="" class="info-title animation-element"> Seguridad </h4>
-                            <p _ngcontent-bbw-c2="">Seguí estos consejos para operar de forma segura con Koban.</p>
+                        <h4 class="title kb-bl-color">Prestámos</h4>
+                        <p class="kb-bl-color">Podés extraer efectivo en cualquier sucursal de BMSC o en cajeros de
+                            la red Enlace o Linkser.</p>
+                    </a>
+                </div>
+                <div class="col-md-3 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/withdrawals-page']">
+                        <div class="row">
+                            <img class="kb-icon kb-icon-left" src="assets/img/koban_icons/cashout.png" alt="">
                         </div>
-                    </div>
-                </a>
+                        <h4 class="title kb-bl-color">Retiros</h4>
+                        <p class="kb-bl-color">Podés extraer efectivo en cualquier sucursal de BMSC o en cajeros de
+                            la red Enlace o Linkser.</p>
+                    </a>
+                </div>
+                <div class="col-md-3 kb-inner-img kb-menu" data-animation="center" data-aos="fade-up"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <a [routerLink]="['/budgeting-page']">
+                        <div class="row">
+                            <img class="kb-icon kb-icon-left" src="assets/img/koban_icons/pie-chart.png" alt="">
+                        </div>
+                        <h4 class="title kb-bl-color">Análisis de gastos</h4>
+                        <p class="kb-bl-color">Conocé como manejar tu plata.</p>
+                    </a>
+                </div>
             </div>
-            <div _ngcontent-bbw-c2="" class="col-md-3 menu inner-img" data-animation="center" data-aos="fade-up"
-            data-aos-offset="300">
-                <a [routerLink]="['/budgeting-page']">
-                    <div _ngcontent-bbw-c2="" class="info">
-                        <div _ngcontent-bbw-c2="" class="icon ">
-                            <img src="assets/img/koban_icons/pie-chart.png" width="80px"
-                            alt="">
-                        </div>
-                        <div _ngcontent-bbw-c2="" class="description">
-                            <h4 _ngcontent-bbw-c2="" class="info-title animation-element"> Analisis de gastos </h4>
-                            <p _ngcontent-bbw-c2="">Conocé como manejar tu plata.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>       
+        </div>
     </div>
 </div>

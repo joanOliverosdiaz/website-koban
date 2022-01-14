@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private dropdown: any;
     private sidebarVisible: boolean;
+    private navbar : any;
     addClase: boolean = false;
 
     constructor(public location: Location, private element: ElementRef) {
@@ -20,7 +21,7 @@ export class NavbarComponent implements OnInit {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
         this.dropdown = navbar.getElementsByClassName('nav-item dropdown')[0];
-        this.dropdown.classList.remove('show');
+        this.navbar = navbar.getElementsByClassName('navbar navbar-expand-lg fixed-top')[0];
     }
     sidebarOpen() {
         const toggleButton = this.toggleButton;
@@ -75,14 +76,11 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
-    showCollapse() {
 
-        if (!this.addClase) {
-            this.dropdown.classList.add('show');
-            this.addClase = true;
-        } else {
-            this.dropdown.classList.remove('show');
-            this.addClase = false;
-        }
+    enterMouse(){
+        this.navbar.classList.remove('navbar-transparent');
+    }
+    leaveMouse(){
+        this.navbar.classList.add('navbar-transparent');
     }
 }
