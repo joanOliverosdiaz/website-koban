@@ -1,0 +1,276 @@
+
+/*****ccs Koban******/
+
+/**** Backgrounds **********/ 
+
+/**** start Backgrounds **********/ 
+.kb-selector-gradient {
+	background: linear-gradient(-45deg, #0685ed, #03bcbe, #00f498, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+.kb-selector-image{
+    background-image: url('assets/img/koban_img/card-koban-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.kb-selector-white{
+    background: #fff;
+}
+
+.kb-selector-static-gradient {
+    background: rgb(6,133,237);
+    background: linear-gradient(80deg, rgba(6,133,237,1) 0%, rgba(3,188,190,1) 50%, rgba(0,244,152,1) 100%);        
+}
+/**** end Backgrounds **********/ 
+
+/**** Margin *****/ 
+
+/**** start Margin **********/
+.kb-mt-2{
+    margin-top: 2rem;
+} 
+.kb-mt-11 {
+    margin-top: 11rem;
+}
+.kb-mt-5{
+    margin-top: 5rem;
+}
+.kb-mt-20{
+    margin-top: 20rem;
+}
+.kb-ml-1{
+    margin-left: 1rem;
+}
+
+/**** end Margin **********/ 
+
+.kb-image{
+    width: 25rem;
+    border-radius: 20px;
+    margin-bottom: 5rem;
+}
+
+/**** Images *****/ 
+
+/**** Start Images *****/ 
+.kb-image-medium{
+    width: 15rem;
+}
+.kb-image-small{
+    width: 10rem;
+}
+
+.kb-image-container{
+    justify-content: center;
+}
+
+/**** end Images *****/ 
+
+/**** Font Colors *****/ 
+
+.kb-bl-color{
+    color: #0685ed !important;
+}
+
+.kb-tx-center{
+    text-align: center;
+}
+
+/**** Icons *****/ 
+
+/**** start Icons *****/ 
+.kb-icon{
+    width: 5rem;
+    float: right;
+    margin: 10px 0px 10px 0px;
+}
+
+.kb-icon-left{
+    float: left;
+    margin-left: 1rem;
+}
+.kb-icon-center{
+    width: 4rem;
+    margin: 1rem 0 1rem 0.5rem;
+}
+
+
+/**** end Icons *****/ 
+
+/**** effects *****/ 
+
+/**** start Effects *****/ 
+.kb-inner-img {
+    transition: 0.3s;
+}
+
+.kb-inner-img:hover {
+    transform: scale(1.1);
+}
+
+.kb-elements{
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0px 5px 24px 6px rgba(62,107,253,0.1);
+}
+
+.kb-elements-white {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0px 5px 24px 6px rgba(62, 107, 253, 0.1);
+}
+
+.kb-menu {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0px 5px 24px 6px rgba(62,107,253,0.1);
+}
+
+.kb-menu::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(229deg, rgba(6, 133, 237, 1) 0%, rgba(3, 188, 190, 1) 50%, rgba(0, 244, 152, 1) 100%);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.kb-menu:hover::before {
+    transform: scaleX(1);
+}
+
+/* ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.kb-menu[data-animation="to-left"] a::before {
+    transform-origin: right;
+}
+
+.kb-menu[data-animation="center"] a::before {
+    transform-origin: center;
+}
+
+.kb-menu[data-animation="bonus"] a::before {
+    transform-origin: right;
+}
+
+.kb-menu[data-animation="bonus"] a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+#kb-content-process {
+    position: absolute;
+    width: 50em;
+    height: 0.3em;
+}
+
+#process {
+    width: 0%;
+    height: 100%;
+    margin-top: 20%;
+    -webkit-animation: progreso 3s linear forwards;
+    animation: progreso 3s linear forwards;
+    background: linear-gradient(229deg, rgba(6, 133, 237, 1) 0%, rgba(3, 188, 190, 1) 50%, rgba(0, 244, 152, 1) 100%);
+}
+
+@-webkit-keyframes progreso {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progreso {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/**** End Effects *****/ 
+
+
+/**** Steps *****/ 
+.kb-steps_text{
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 5px;
+}
+.kb-steps{
+    border: 1px solid;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 20px;
+    height: 40px;
+    padding-top: 6px;
+    background: #fff;
+    color: #0685ed;
+}
+
+.row-steps{
+    margin: 20px;
+}
+/**** End Steps *****/ 
+
+.kb-content{
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/***buttons *******/
+
+.kb-btn-download{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 20px;
+    margin: 2rem 0 5rem 0;
+}
+
+.kb-btn-download:hover{
+    background: #fff;
+    color: #0685ed;
+    border: 2px solid #0685ed;
+}
+
+
+
+/***Media Screen****/
+
+@media screen and (max-width : 1190px){
+    #kb-content-process{
+        display: none;
+    }
+}
+
+.kb-br-bt{
+    border-bottom: 1px solid #0685ed;
+}
+
+.kb-cursor{
+    cursor: pointer;
+}

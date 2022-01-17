@@ -184,6 +184,11 @@
             color: $white-color;
             border-color: $white-color;
         }
+
+        .nav-link:hover>.dropdown-menu .dropdown-menu-right{
+            @include opacity(1);
+            visibility: visible;
+        }
         .active .nav-link
         .active .nav-link:hover,
         .active .nav-link:focus,
