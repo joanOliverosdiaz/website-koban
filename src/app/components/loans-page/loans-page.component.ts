@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoansPageComponent implements OnInit {
 
+  blShowLoans = true;
+  blShowdues = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showLoans(){
+    this.blShowLoans = true;
+    this.blShowdues = false;
+  }
+  showDues(){
+    this.blShowLoans = false;
+    this.blShowdues = true;
   }
 
 }

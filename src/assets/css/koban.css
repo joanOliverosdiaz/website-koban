@@ -58,6 +58,9 @@
 .kb-image-medium{
     width: 15rem;
 }
+.kb-image-small{
+    width: 10rem;
+}
 
 .kb-image-container{
     justify-content: center;
@@ -262,4 +265,12 @@
     #kb-content-process{
         display: none;
     }
+}
+
+.kb-br-bt{
+    border-bottom: 1px solid #0685ed;
+}
+
+.kb-cursor{
+    cursor: pointer;
 }

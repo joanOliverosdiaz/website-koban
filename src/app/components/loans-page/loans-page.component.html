@@ -4,16 +4,147 @@
             <div _ngcontent-bbw-c2="" class="col-md-6">
                 <div _ngcontent-bbw-c2="" class="section-description" data-aos="fade-up" data-aos-duration="3000">
                     <h2 _ngcontent-bbw-c2="" class="title">Créditos pensados <br> para vos</h2>
-                    <p _ngcontent-bbw-c2="" class="title">Te ofrecemos más crédito para lo que necesites de la forma más fácil, rápida y transparente.</p>
+                    <p _ngcontent-bbw-c2="" class="title">Te ofrecemos más crédito para lo que necesites de la forma más
+                        fácil, rápida y transparente.</p>
                 </div>
             </div>
-            <div _ngcontent-bbw-c2="" class="col-md-6 d-flex kb-image-container" data-aos="fade-up" data-aos-duration="3000">
+            <div _ngcontent-bbw-c2="" class="col-md-6 d-flex kb-image-container" data-aos="fade-up"
+                data-aos-duration="3000">
                 <div _ngcontent-bbw-c2="">
-                    <img class="kb-image" _ngcontent-bbw-c2="" src="https://www.uala.com.ar/_next/image?url=%2Fassets%2Fimages%2Fprestamos%2Fhero-creditos.jpg&w=1920&q=75">
+                    <img class="kb-image" _ngcontent-bbw-c2=""
+                        src="https://www.uala.com.ar/_next/image?url=%2Fassets%2Fimages%2Fprestamos%2Fhero-creditos.jpg&w=1920&q=75">
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="d-flex flex-column justify-content-center w-100 h-100 kb-selector-white">
+    <div class="container">
+        <div _ngcontent-bbw-c2="" class="row" style="justify-content:space-evenly">
+            <div _ngcontent-bbw-c2="" (click)="showLoans()" class="col-md-5 d-flex justify-content-center kb-br-bt kb-cursor" data-aos="fade-up"
+                data-aos-duration="3000">
+                <h4 class="kb-bl-color">Préstamos</h4>
+            </div>
+            <div _ngcontent-bbw-c2="" (click)="showDues()" class="col-md-5 d-flex justify-content-center kb-br-bt kb-cursor" data-aos="fade-up"
+                data-aos-duration="3000">
+                <h4 class="kb-bl-color">Cuotas</h4>
+            </div>            
+        </div>
+    </div>
+</div>
 
+
+<div class="d-flex flex-column justify-content-center w-100 h-100 kb-selector-white" *ngIf="blShowLoans">
+    <div class="container kb-mt-5">
+        <div _ngcontent-bbw-c2="" class="row">
+            <div _ngcontent-bbw-c2="" class="col-md-6">
+                <div _ngcontent-bbw-c2="" data-aos="fade-up" data-aos-duration="3000">
+                    <h2 _ngcontent-bbw-c2="" class="title kb-bl-color">Podés usarlo como quieras</h2>
+                    <p _ngcontent-bbw-c2="" class="category kb-bl-color">Pedilo desde la app y usalo para tu emprendimiento, un viaje, tu hogar o para comprar lo que quieras.</p>
+                </div>
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/loan.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9 kb-content">
+                        <p class="description kb-bl-color">Pedí hasta Bs 500 en 24 cuotas fijas.</p>
+                    </div>
+                </div>
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/cash.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9">
+                        <p class="description kb-bl-color">La plata se deposita en tu cuenta de Koban.</p>
+                    </div>
+                </div>
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/pie-chart.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9">
+                        <p class="description kb-bl-color">Hacé la simulación en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+            <div _ngcontent-bbw-c2="" class="col-md-6 d-flex kb-image-container" data-aos="fade-up"
+                data-aos-duration="3000">
+                <img class="kb-image" _ngcontent-bbw-c2="" src="https://www.uala.com.ar/_next/image?url=%2Fassets%2Fimages%2Fprestamos%2FMask%20Group%20(25).png&w=1920&q=75">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex flex-column justify-content-center w-100 h-100 kb-selector-white" *ngIf="blShowdues">
+    <div class="container kb-mt-5">
+        <div _ngcontent-bbw-c2="" class="row">
+            <div _ngcontent-bbw-c2="" class="col-md-6">
+                <div _ngcontent-bbw-c2="" data-aos="fade-up" data-aos-duration="3000">
+                    <h2 _ngcontent-bbw-c2="" class="title kb-bl-color">Podés tener tu plata de vuelta</h2>
+                    <p _ngcontent-bbw-c2="" class="category kb-bl-color">Pasá a cuotas un pago que ya hiciste y te devolvemos la plata en el momento.</p>
+                </div>
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/loan.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9 kb-content">
+                        <p class="description kb-bl-color">Podés pasar compras, recargas o pagos de facturas.</p>
+                    </div>
+                </div>
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/cash.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9">
+                        <p class="description kb-bl-color">La plata se deposita en el momento.</p>
+                    </div>
+                </div>                
+            </div>
+            <div _ngcontent-bbw-c2="" class="col-md-6 d-flex kb-image-container" data-aos="fade-up"
+                data-aos-duration="3000">
+                <img class="kb-image" _ngcontent-bbw-c2="" src="https://www.uala.com.ar/_next/image?url=%2Fassets%2Fimages%2Fcuotas%2Fcuotas-otorgadas%201.png&w=1920&q=75">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex flex-column justify-content-center w-100 h-100 kb-selector-white">
+    <div class="container kb-mt-5">
+        <div _ngcontent-bbw-c2="" class="row">
+            <div _ngcontent-bbw-c2="" class="col-md-6 d-flex kb-image-container" data-aos="fade-up"
+                data-aos-duration="3000">
+                <img class="kb-image" _ngcontent-bbw-c2="" src="https://www.uala.com.ar/_next/image?url=%2Fassets%2Fimages%2Fprestamos%2FMask%20Group%20(24).png&w=1920&q=75">
+            </div>
+            <div _ngcontent-bbw-c2="" class="col-md-6">
+                <div _ngcontent-bbw-c2="" data-aos="fade-up" data-aos-duration="3000">
+                    <h2 _ngcontent-bbw-c2="" class="title kb-bl-color">Podés tener el control de los pagos</h2>
+                </div>
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/cashout.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9 kb-content">
+                        <p class="description kb-bl-color">Elegí en cuántas cuotas querés pagarlo.</p>
+                    </div>
+                </div>
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/calendar.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9">
+                        <p class="description kb-bl-color">Decidí qué día del mes hacer los pagos.</p>
+                    </div>
+                </div>                
+                <div class="row kb-content" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-lg-2">
+                        <img src="assets/img/koban_icons/payment-method.png" width="50px" alt="">
+                    </div>          
+                    <div class="col-lg-9">
+                        <p class="description kb-bl-color">Cancelá la deuda cuando quieras.</p>
+                    </div>
+                </div>                
+            </div>            
+        </div>
+    </div>
+</div>
 <app-loans-simulation></app-loans-simulation>
