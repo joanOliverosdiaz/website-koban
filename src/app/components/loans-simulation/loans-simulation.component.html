@@ -1,1 +1,40 @@
-<p>loans-simulation works!</p>
+<div class="d-flex flex-column justify-content-center w-100 h-100 kb-selector-static-gradient">
+    <div class="container">
+        <div _ngcontent-bbw-c2="" class="row justify-content-center kb-mt-2">
+            <div class="col-md-12">
+                <h2 class="title kb-tx-center">Simulá tu préstamo</h2>
+            </div>
+            <div class="col-md-6">
+                <p class="kb-tx-center">Completá la simulación y podrás conocer cuánto podés pedir para tu préstamo.</p>
+            </div>
+            <div class="col-md-12 kb-mt-2">
+                <p class="kb-tx-center">Monto a solicitar</p>
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <input class="form-control kb-tx-center kb-input"  type="text" name=""
+                 id="" maxlength="4"  
+                 (input)="changeValue(opcionSeleccionado)"
+                (keypress)="keyPressNumbers($event)" [(ngModel)]="requestAmount">
+            </div>
+            <div class="col-md-12 kb-mt-2">
+                <p class="kb-tx-center">Cantidad de cuotas</p>
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <div class="flex pt-4 w-9/12 mx-auto justify-center border-white border-b pb-8 mb-8"
+                    style="border-bottom: 1px solid #fff;">
+                    <div >
+                        <button 
+                        [className]="months.value == opcionSeleccionado  ? 'px-4 mx-4 kb-outline-none kb-select-btn' : 'px-4 mx-4 kb-outline-none'"
+                        *ngFor="let months of monthsValueDeps" (click)="changeValue(months.value)">{{months.value}}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 kb-mt-2">
+                <p class="kb-tx-center">Cuotas fijas de</p>
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <h3 class="title kb-tx-center">{{simulationValue | number:'1.0-2' | currency: 'Bs '}}</h3>
+            </div>
+        </div>
+    </div>
+</div>
