@@ -62,6 +62,9 @@
                     <a [routerLink]="['about-us-page']" class="nav-link"> Sobre
                         Nosotros</a>
                 </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a [routerLink]="['costs-page']" class="nav-link">Costos</a>
+                </li>
             </ul>
         </div>
 

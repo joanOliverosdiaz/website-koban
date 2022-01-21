@@ -38,6 +38,7 @@ import { FinanceComponent } from './finance/finance.component';
 import { BudgetingComponent } from './budgeting/budgeting.component';
 import { LoansPageComponent } from './loans-page/loans-page.component';
 import { LoansSimulationComponent } from './loans-simulation/loans-simulation.component';
+import { CostsPageComponent } from './costs-page/costs-page.component';
 
 @NgModule({
     imports: [
@@ -80,7 +81,8 @@ import { LoansSimulationComponent } from './loans-simulation/loans-simulation.co
         FinanceComponent,
         BudgetingComponent,
         LoansPageComponent,
-        LoansSimulationComponent
+        LoansSimulationComponent,
+        CostsPageComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
