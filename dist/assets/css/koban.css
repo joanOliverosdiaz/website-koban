@@ -47,7 +47,7 @@
 /**** end Margin **********/ 
 
 .kb-image{
-    width: 25rem;
+    width: 23rem;
     border-radius: 20px;
     margin-bottom: 5rem;
 }
@@ -273,4 +273,30 @@
 
 .kb-cursor{
     cursor: pointer;
+}
+
+.kb-input {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #fff !important;
+    color: #fff !important;
+    font-size: 30px !important;
+}
+
+.kb-outline-none{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.kb-select-btn{
+    background: #ffffff;
+    color: #0685ed;
+    border-radius: 20px;
+}
+
+.costs-element{
+    font-size: 6rem;
+    line-height: 2;
 }
